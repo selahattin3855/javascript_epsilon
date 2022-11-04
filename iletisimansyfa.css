@@ -1,0 +1,66 @@
+.iletişim{
+    padding: 10px 0;
+}
+
+.page-title h3{
+    width: 100%;
+    text-align: center;
+    color: #5b2a02;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+.page-title h3::after{
+    content:"";
+    width: 40px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.iletişim-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iletişim-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 50px;
+    flex-direction: column;
+    font-family: cursive;
+}
+
+.iletişim-item i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #5b2a02;
+}
+
+.iletişim-item p{
+    font-size: 16.5px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:800px) {
+    .iletişim-content{
+        flex-direction: column;
+    }
+
+    .iletişim-item p{
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .iletişim-item p{
+        font-size: 16px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

@@ -1,0 +1,60 @@
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0, auto;
+    color: #5b2a02;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+.footer h2::after{
+    content:"";
+    width: 40px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer{
+    background-color: black;
+    margin-top: 50px;
+}
+
+.footer-copyright{
+    color: white;
+    text-align: center;
+    flex-basis: 50%;
+    line-height: 2px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-social i{
+    margin-bottom: 50px;
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 0 35px;
+}
+
+.wp{
+    color: #25d366;
+}
+.ins{
+    color: #c32aa3;
+}
+.ytb{
+    color: #ff0000;
+}
+

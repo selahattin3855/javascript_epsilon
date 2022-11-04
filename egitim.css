@@ -1,0 +1,109 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+.egitim{
+    margin-top: 50px;
+}
+
+.egitim .container h1{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #745b37;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+.egitim-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.egitim-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    flex-direction: column;
+    width: 25%;
+}
+
+.egitim-title h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5b2a02;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.egitim-title h3::after{
+    content:"";
+    width: 40px;
+    height: 3px;
+    background-color: #5b2a02;
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.egitim-title img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 30px;
+}
+
+.egitim-text {
+    width: 80%;
+    font-family: cursive;
+    font-size: 16px;
+    text-align: center;
+    color: #2c2722; 
+    background-color: rgb(250, 248, 248);
+    border-radius: 15px;
+}
+
+@media only screen and (max-width:1065px){
+    .egitim-content{
+        flex-direction: column;
+    }
+
+    .egitim-title{
+        width: 100%;
+    }
+    
+    .egitim-title img{
+        width: 65%;
+    }
+    .egitim-text {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .egitim-text {
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media only screen and (max-width:460px){
+    .egitim-title img{
+        width: 90%;
+    }
+    .egitim-text {
+        width: 90%;
+        font-size: 18px;
+    }
+    .egitim .container h1{
+        font-size: 33px; 
+        letter-spacing: 0.3rem; 
+    }
+}

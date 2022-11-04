@@ -1,0 +1,138 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.iletisim{
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+.iletisim-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.iletisim-text{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iletisim-text h1{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 40px;
+    color: #745b37;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+}
+
+.iletisim-text p{
+    font-size: 20px;
+    text-align: center;
+    color: #2c2722; 
+    background-color: rgb(250, 248, 248);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-family:cursive;
+}
+
+.iletisim-text i{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #5b2a02;
+    text-align: center;
+}
+
+.iletisim-text a{
+    list-style: none;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.iletisim-konum {
+  text-align: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width:1067px){
+    
+    .iletisim-text{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:890px){
+    
+    .konum { 
+        width: 540px; 
+        height: 380px; 
+    }
+}
+
+@media only screen and (max-width:768px){
+    .iletisim-text p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media only screen and (max-width:630px){
+    
+    .konum {
+        
+        width: 440px; 
+        height: 440px; 
+      }
+}
+
+@media only screen and (max-width:520px){
+    
+    .konum {
+        width: 380px; 
+        height: 400px; 
+    }
+    .iletisim-text h1{
+        font-size: 30px;
+        letter-spacing: 0.3rem;
+    }
+    .iletisim-text p{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:410px){
+    
+    .konum {
+        
+        width: 330px; 
+        height: 360px; 
+      }
+}
+
+@media only screen and (max-width:361px){
+    
+    .konum {
+        
+        width: 310px; 
+        height: 340px; 
+      }
+}
+
+@media only screen and (max-width:340px){
+    
+    .konum {
+        
+        width: 280px; 
+        height: 320px; 
+      }
+}

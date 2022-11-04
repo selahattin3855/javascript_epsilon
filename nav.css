@@ -1,0 +1,491 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background: url(img/epsilonmenu.png);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 16.2vw;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    justify-items:center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 11.5vw;
+    width: 11.5vw;
+    margin-top: 5px;
+}
+
+.logo a{
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.logo a{ 
+    color: brown;
+    letter-spacing: 4px;
+    transform: translateX(25%);   
+}
+
+.baslık1{
+    font-size: 57px;
+}
+.baslık2{
+    font-size: 21px;
+}
+.baslık3{
+    font-size: 15px;
+}
+
+.social-media{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 8%;
+    transform: translateX(30%);
+}
+
+.social-media li a{
+   font-size: 23px;
+}
+
+.social-media a:hover{
+    font-size: 26px;
+}
+
+.whatsapp{
+    color: #25d366;
+}
+.instagram{
+    color: #c32aa3;
+}
+.youtube{
+    color: #ff0000;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 38%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    position: relative;
+    color:purple;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 7px 5px;
+    font-variant: small-caps;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16.3px;
+}
+
+.nav-links a:hover{
+    background-color:rgb(228, 240, 240);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.nav-links .social-media{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(14, 14, 133);
+}
+
+@media screen and (max-width:1250px){
+    .baslık1{
+        font-size: 53px;
+    }
+    .baslık2{
+        font-size: 20px;
+    }
+    .baslık3{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1120px){
+    .baslık1{
+        font-size: 48px;
+    }
+    .baslık2{
+        font-size: 19px;
+    }
+    .baslık3{
+        font-size: 14px;
+    }
+    .social-media li a{
+        font-size: 20px;
+     }
+     
+    .social-media a:hover{
+         font-size: 23px;
+    }
+
+    .nav-links a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1020px){
+    .logo {
+        transform: translateX(3px);
+    }
+    .baslık1{
+        font-size: 43px;
+    }
+    .baslık2{
+        font-size: 18px;
+    }
+    .baslık3{
+        font-size: 14px;
+    }
+    .nav-links{
+        width: 39%;
+    }
+}
+
+@media screen and (max-width:950px){
+    .logo a{
+        transform: translateX(30%);
+    }
+    .baslık1{
+        font-size: 37px;
+    }
+    .baslık2{
+        font-size: 17px;
+        letter-spacing: 3px;
+    }
+    .baslık3{
+        font-size: 13px;
+    }
+    .nav-links{
+        width: 40%;
+    }
+    .social-media{
+        transform: translateX(45%);
+    }
+
+    .social-media li a{
+        font-size: 18px;
+    }
+     
+    .social-media a:hover{
+         font-size: 21px;
+    }
+    .nav-links a{
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (max-width:875px){
+
+    .baslık1{
+        font-size: 35px;
+    }
+    .baslık2{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .baslık3{
+        font-size: 12px;
+    }
+    .nav-links{
+        width: 43%;
+    }
+    .nav-links a{
+        font-size: 14px;
+    }
+    .social-media{
+        width: 9%;
+    }
+
+    .social-media{
+        transform: translateX(40%);
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    header{
+        background: url(img/AA.png);
+        background-attachment: fixed;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 23.1vw;
+    }
+    
+    .hamburger{
+        display: block;
+        transform: translateX(-300%);  
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        justify-items:center;
+        align-items: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    }
+
+    .nav-links{
+        position:absolute;
+        left: -100%;
+        top: 22vw;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 55vh;
+        transition: 0.3s;
+        z-index: +9999999999999999999999;
+        background: #3a6186;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-bottom-left-radius: 10%;
+        border-bottom-right-radius: 10%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .nav-links li {
+        margin: 16px 0;
+    }
+
+    .nav-links li a{
+       color: white;
+       font-size: 15px;
+       letter-spacing: 1.3px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .logo{
+       transform: translateX(20%);
+       margin-top: 5px;
+    }
+
+    .logo a{
+        transform: translateX(10%);
+    }
+
+    .logo img{
+        height: 17vw;
+        width: 17vw;
+        transform: translateX(-10%);
+    }
+    .baslık1{
+        font-size: 35px;    
+    }
+    .baslık2{
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .baslık3{
+        font-size: 12px;
+        letter-spacing: 3.3px;
+    }
+
+    .social-media{
+        display: none;
+    }
+    
+    .nav-links .social-media{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+        transform: translateX(0px);
+    }
+    
+    .nav-links .social-media li a{
+       font-size: 21px;
+    }
+}
+
+
+@media screen and (max-width:680px){
+
+    .baslık1{
+        font-size: 32px;    
+    }
+    .baslık2{
+        font-size: 15px;    
+    }
+    .baslık3{
+        font-size: 12px;
+    }
+    .hamburger{
+        transform: translateX(-270%);
+    }
+}
+
+@media screen and (max-width:550px){
+ 
+    .baslık1{
+        font-size: 30px;  
+    }
+    .baslık2{
+        font-size: 14.5px;
+        letter-spacing: 2.5px;
+    }
+    .baslık3{
+        font-size: 12px;
+    }
+    .hamburger{
+        transform: translateX(-220%);
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .logo img{
+        margin-top: 1px;
+        height: 18vw;
+        width: 18vw;
+    }
+
+    .logo a{
+        transform: translateX(5%);
+    }
+    .hamburger{
+       transform: translateX(-180%)
+    }
+    .baslık1{
+        font-size: 30px;    
+    }
+    .baslık2{
+        font-size: 14px;
+        
+        line-height: 15px;
+    }
+    .baslık3{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:425px){
+   
+    .hamburger{
+        margin-bottom: 10px;
+    }
+    .logo{
+        transform: translateX(15%);
+    }
+}
+
+@media screen and (max-width:390px){
+    
+    .logo img{
+        margin-top: 1px;
+        height: 19vw;
+        width: 19vw;
+    }
+    .baslık1{
+        font-size: 30px;     
+    }
+    .baslık2{
+        font-size: 14px;
+        letter-spacing:2.5px;
+    }
+    .baslık3{
+        display: none;
+    }
+}
+
+@media screen and (max-width:365px){
+    .hamburger{
+        transform: translateX(-150%)
+     }
+    .logo img{
+        margin-top: 1px;
+        height: 19.5vw;
+        width: 19.5vw;
+    }
+    .baslık1{
+        font-size: 25px; 
+        letter-spacing: 4px; 
+    }
+    .baslık2{
+        font-size: 14px;
+        letter-spacing:2.5px;
+    }
+}
+
+@media screen and (max-width:325px){
+    .hamburger{
+        transform: translateX(-120%)
+     }
+    .baslık1{
+        font-size: 25px; 
+        letter-spacing: 3px; 
+    }
+    .baslık2{
+        font-size: 13px;
+        letter-spacing:2px;
+        line-height: 10px;
+    } 
+    .logo a{
+        transform: translateX(7%);
+    }
+}
+
+
+
